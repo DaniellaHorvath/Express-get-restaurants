@@ -9,8 +9,3 @@ app.listen(port, () => {
     db.sync();
     console.log(`Listening at http://localhost:${port}/restaurants`);
 })
-
-// app.get("/book", async (req, res) => {
-//     const books = await Book.findAll();
-//     res.json(books);
-// })
