@@ -53,7 +53,7 @@ app.patch("/restaurants/:id", async (req, res) => {
 
 // DELETE
 app.delete("/restaurants/:id", async (req, res) => {
-    const restaurants = await Restaurant.findByPk((req.params.id));
+    const restaurants = await Restaurant.findByPk(req.params.id);
 
     if(!restaurants){
         res.status(404).json({ error: "Restaurant not found!"});
